@@ -66,7 +66,8 @@
                                         <el-dropdown-menu>
                                             <el-dropdown-item>股票</el-dropdown-item>
                                             <el-dropdown-item>
-                                                <span>期货</span>
+                                                <span>
+                                                    <router-link to="/futures">期货</router-link></span>
                                             </el-dropdown-item>
                                             <el-dropdown-item>
                                                 <span>期权</span>

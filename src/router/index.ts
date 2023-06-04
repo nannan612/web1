@@ -40,7 +40,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/comments',
     name: 'Comments',
     component: () => import('@/views/comments.vue')
-  }
+  },
+  {
+    path: '/futures',
+    name: 'Futures',
+    component: () => import('@/views/futures.vue')
+  },
 ]
 
 const router = createRouter({
