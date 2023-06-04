@@ -12,31 +12,6 @@ const routes: Array<RouteRecordRaw> = [
     component: Index
   },
   {
-    path: '/news',
-    name: 'News',
-    component: () => import('@/views/News.vue')
-  },
-  {
-    path: '/news/:id',
-    name: 'NewsDetail',
-    component: () => import('@/views/NewsDetail.vue')
-  },
-  {
-    path: '/product',
-    name: 'Product',
-    component: () => import('@/views/Product.vue')
-  },
-  {
-    path: '/job',
-    name: 'Job',
-    component: () => import('@/views/Job.vue')
-  },
-  {
-    path: '/job/:id',
-    name: 'JobDetail',
-    component: () => import('@/views/JobDetail.vue')
-  },
-  {
     path: '/login',
     name: 'Login',
     component: () => import('@/views/Login.vue')
@@ -60,6 +35,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/singlepaper',
     name: 'Singlepaper',
     component: () => import('@/views/singlepaper.vue')
+  },
+  {
+    path: '/comments',
+    name: 'Comments',
+    component: () => import('@/views/comments.vue')
   }
 ]
 

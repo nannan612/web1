@@ -37,7 +37,7 @@
         <div class="content-blok service-case">
             <div class="service-case">
                 <div class="block-line"></div>
-                <p class="case-title">我们的服务</p>
+                <p class="case-title">团队介绍</p>
                 <p class="case-subtitle">我们已定制多套解决方案，助您轻松跨入“互联网+”时代</p>
                 <div class="case-list">
                     <div class="case-info" v-for="(item, index) in caseList" :key="index">
@@ -75,8 +75,8 @@ type InfoData = {
 }
 const serviceList = ref<ServiceItem[]>([])
 const serviceIdeaInfo = ref<InfoData>({
-  ideaTitle: '服务理念',
-  ideaSubTitle: 'SERVICE IDEA',
+  ideaTitle: '团队理念',
+  ideaSubTitle: 'TEAM IDEA',
   ideaDesc: '专注品牌事业十余年，是一家兼具国际视野、创新动力、全方位跨平台的品牌咨询与设计整合服务公司。公司业务涉及大数据、智能多媒体、物联网。'
 })
 const serviceIdeaImg = ref<ImgItem[]>([])

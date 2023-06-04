@@ -6,11 +6,13 @@
       <over-lay></over-lay>
       <scroll-hint v-scroll-to="{ element: '.wrap-block', duration: 300, easing: 'ease', offset: 1 }"></scroll-hint>
     </div>
+    <indexcontain></indexcontain>
     <index-service></index-service>
     <AwFooter></AwFooter>
   </div>
 </template>
 <script lang="ts" setup name="">
+import indexcontain from '@/components/indexcontain.vue'
 import AwHeader from '@/components/public/Header.vue'
 import AwFooter from '@/components/public/Footer.vue'
 import OverLay from '@/components/OverLayText.vue'

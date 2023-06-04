@@ -11,9 +11,12 @@
                 <div class="menu-wrapper">
                     <div class="menu-item">
                         <h2 class="menu-item-link">
-                            <span class="el-dropdown-link" :class="{ a_text_dark: navDarkActive }">
+                            <span class="el-dropdown-link" >
                                 <router-link to="/index">
-                                    首页
+                                    <span :class="{ a_text_dark: navDarkActive }">
+                                         首页
+                                    </span>
+                                   
                                 </router-link>
                             </span>
                         </h2>
@@ -23,13 +26,90 @@
                             <span>
                                 <el-dropdown class="el-dropdown">
                                     <span class="el-dropdown-link" :class="{ a_text_dark: navDarkActive }">
-                                        <router-link to="/paper">
-                                            知识文库
+                                        <router-link to="/news">
+                                            <span :class="{ a_text_dark: navDarkActive }">
+                                            
+                                            合研智析
+                                            </span>
                                         </router-link>
                                         <el-icon class="el-icon--right">
                                             <arrow-down />
                                         </el-icon>
                                     </span>
+                                    <template #dropdown>
+                                        <el-dropdown-menu>
+                                            <el-dropdown-item>合研</el-dropdown-item>
+                                            <el-dropdown-item>
+                                                <span>智析</span>
+                                            </el-dropdown-item>
+                                        </el-dropdown-menu>
+                                    </template>
+                                </el-dropdown>
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-item-link">
+                            <span>
+                                <el-dropdown class="el-dropdown">
+                                    <span class="el-dropdown-link" :class="{ a_text_dark: navDarkActive }">
+                                        <router-link to="/tool">
+                                            <span :class="{ a_text_dark: navDarkActive }">
+                                            金工计算</span>
+                                            
+                                        </router-link>
+                                        <el-icon class="el-icon--right">
+                                            <arrow-down />
+                                        </el-icon>
+                                    </span>
+                                    <template #dropdown>
+                                        <el-dropdown-menu>
+                                            <el-dropdown-item>股票</el-dropdown-item>
+                                            <el-dropdown-item>
+                                                <span>期货</span>
+                                            </el-dropdown-item>
+                                            <el-dropdown-item>
+                                                <span>期权</span>
+                                            </el-dropdown-item>
+                                        </el-dropdown-menu>
+                                    </template>
+                                </el-dropdown>
+                            </span>
+                        </h2>
+                    </div>
+
+                    <div class="menu-item">
+                        <h2 class="menu-item-link">
+                            <span>
+                                <el-dropdown class="el-dropdown">
+                                    <span class="el-dropdown-link" :class="{ a_text_dark: navDarkActive }">
+                                        <router-link to="/tool">
+                                            <span :class="{ a_text_dark: navDarkActive }">
+                                            科研中心</span>
+                                            
+                                        </router-link>
+                                        <el-icon class="el-icon--right">
+                                            <arrow-down />
+                                        </el-icon>
+                                    </span>
+                                    <template #dropdown>
+                                        <el-dropdown-menu>
+                                            <el-dropdown-item>
+                                                <router-link to="/paper">
+                                                    热门论文
+                                                </router-link>
+                                                
+                                            </el-dropdown-item>
+                                            <el-dropdown-item>
+                                                <span>
+                                                    数据中心
+                                                </span>
+                                            </el-dropdown-item>
+                                            <el-dropdown-item>
+                                                <span>实验室</span>
+                                            </el-dropdown-item>
+                                        </el-dropdown-menu>
+                                    </template>
                                 </el-dropdown>
                             </span>
                         </h2>
@@ -39,7 +119,35 @@
 
                             <span class="el-dropdown-link" :class="{ a_text_dark: navDarkActive }">
                                 <router-link to="/tool">
-                                    金融工具
+                                    <span :class="{ a_text_dark: navDarkActive }">
+                                    云上金融</span>
+                                    
+                                </router-link>
+                            </span>
+
+                        </h2>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-item-link">
+
+                            <span class="el-dropdown-link" :class="{ a_text_dark: navDarkActive }">
+                                <router-link to="/tool">
+                                    <span :class="{ a_text_dark: navDarkActive }">
+                                    产教园地</span>
+                                    
+                                </router-link>
+                            </span>
+
+                        </h2>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-item-link">
+
+                            <span class="el-dropdown-link" :class="{ a_text_dark: navDarkActive }">
+                                <router-link to="/comments">
+                                    <span :class="{ a_text_dark: navDarkActive }">
+                                    讨论中心</span>
+                                    
                                 </router-link>
                             </span>
 
@@ -49,7 +157,9 @@
                         <h2 class="menu-item-link">
                             <span class="el-dropdown-link" :class="{ a_text_dark: navDarkActive }">
                                 <router-link to="/login">
-                                    登录
+                                    <span :class="{ a_text_dark: navDarkActive }">
+                                     登录</span>
+                                   
                                 </router-link>
                             </span>
                         </h2>
@@ -59,7 +169,8 @@
                 <div class="avatar-container" v-show=ifshowimg>
                     <el-dropdown @command="handleCommand" class="right-menu-item hover-effect" trigger="click">
                         <div class="avatar-wrapper">
-                            <el-avatar :size="50" src="../../assets/images/touxiang.png" /> <el-icon><caret-bottom /></el-icon>
+                            <el-avatar :size="50" src="../../assets/images/touxiang.png" />
+                            <el-icon><caret-bottom /></el-icon>
                         </div>
                         <template #dropdown>
                             <el-dropdown-menu>
