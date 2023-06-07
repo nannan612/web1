@@ -1,5 +1,5 @@
 <template>
     <div>
-        个人中心页面
+        股票页面
     </div>
 </template>

@@ -28,7 +28,7 @@
                                     <div class="blog-date"> <span class="month">MAR </span> <span class="date"> 06</span>
                                     </div>
                                     <a class="hover-effect">
-                                        <img src="../assets/img/news1.jpg" alt="Fuel" />
+                                        <img src="../../assets/img/news1.jpg" alt="Fuel" />
                                     </a>
                                 </div>
                                 <div class="blog-content">
@@ -45,7 +45,7 @@
                                     <a class="hover-effect">
                                         <router-link to="/singlepaper">
 
-                                            <img src="../assets/img/news1.jpg" alt="Field Training" />
+                                            <img src="../../assets/img/news1.jpg" alt="Field Training" />
                                         </router-link>
                                     </a>
                                 </div>
@@ -64,7 +64,7 @@
                                     <a class="hover-effect">
                                         <router-link to="/singlepaper">
 
-                                            <img src="../assets/img/news1.jpg" alt="Field Training" />
+                                            <img src="../../assets/img/news1.jpg" alt="Field Training" />
                                         </router-link>
                                     </a>
                                 </div>
@@ -81,7 +81,7 @@
                                     <a class="hover-effect">
                                         <router-link to="/singlepaper">
 
-                                            <img src="../assets/img/news1.jpg" alt="Field Training" />
+                                            <img src="../../assets/img/news1.jpg" alt="Field Training" />
                                         </router-link>
                                     </a>
                                 </div>
@@ -99,7 +99,7 @@
                                     </div>
                                     <a class="hover-effect">
                                         <router-link to="/singlepaper">
-                                            <img src="../assets/img/news1.jpg" alt="Fuel" />
+                                            <img src="../../assets/img/news1.jpg" alt="Fuel" />
                                         </router-link>
                                     </a>
                                 </div>
@@ -116,7 +116,7 @@
                                     <a class="hover-effect">
                                         <router-link to="/singlepaper">
 
-                                            <img src="../assets/img/news1.jpg" alt="Field Training" />
+                                            <img src="../../assets/img/news1.jpg" alt="Field Training" />
                                         </router-link>
 
                                     </a>
@@ -192,6 +192,6 @@
     </main>
 </template>
 
-<style scoped>@import url(../assets/css/bootstrap.min.css);
-@import url(../assets/fonts/font-awesome/css/font-awesome.min.css);
-@import url(../assets/css/style.css);</style>
+<style scoped>@import url(../../assets/css/bootstrap.min.css);
+@import url(../../assets/fonts/font-awesome/css/font-awesome.min.css);
+@import url(../../assets/css/style.css);</style>

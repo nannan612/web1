@@ -16,10 +16,10 @@
 
                     </div>
                     <div class="menu-image">
-                        <img src="../assets/images/HSI.jpg" alt="">
+                        <img src="../../assets/images/HSI.jpg" alt="">
                     </div>
                     <div class="menu-image">
-                        <img src="../assets/images/Snipaste_2023-06-04_21-20-17.png" alt="">
+                        <img src="../../assets/images/Snipaste_2023-06-04_21-20-17.png" alt="">
                     </div>
                 </div>
                 <div class="right">
@@ -32,12 +32,12 @@
                         
                     </div>
                     <div class="menu-image">
-                            <img src="../assets/images/Snipaste_2023-06-04_21-30-58.png" alt="">
+                            <img src="../../assets/images/Snipaste_2023-06-04_21-30-58.png" alt="">
                         </div>
                 </div>
             </div>
         </div>
-        <AwFooter></AwFooter>
+        <AwFooter></AwFooter> 
 
     </div>
 </template>

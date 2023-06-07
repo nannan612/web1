@@ -17,7 +17,7 @@ export default createStore<MainStates>({
     headerLogoShow: true,
     navDarkActive: false,
     articlePath: '',
-    ifshowimg: true
+    ifshowimg: false
   },
   mutations: {
     setBannerHeight (state, value) {

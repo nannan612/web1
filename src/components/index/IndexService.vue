@@ -86,47 +86,47 @@ onBeforeMount(() => {
   serviceList.value = [
     {
       description: '大数据',
-      path: require('../assets/img/index/bigData.webp')
+      path: require('../../assets/img/index/bigData.webp')
     },
     {
       description: '智能多媒体',
-      path: require('../assets/img/index/media.webp')
+      path: require('../../assets/img/index/media.webp')
     },
     {
       description: '互联网',
-      path: require('../assets/img/index/internet.webp')
+      path: require('../../assets/img/index/internet.webp')
     },
     {
       description: '云计算',
-      path: require('../assets/img/index/cloud.webp')
+      path: require('../../assets/img/index/cloud.webp')
     }
   ]
   serviceIdeaImg.value = [
     {
       name: 'lefImg',
-      path: require('../assets/img/index/service1.png')
+      path: require('../../assets/img/index/service1.png')
     },
     {
       name: 'rightImg',
-      path: require('../assets/img/index/service2.png')
+      path: require('../../assets/img/index/service2.png')
     }
   ]
   caseList.value = [
     {
       desc: '私家智能定制APP',
-      path: require('../assets/img/index/app1.jpg')
+      path: require('../../assets/img/index/app1.jpg')
     },
     {
       desc: '公司业绩统计管理系统',
-      path: require('../assets/img/index/system1.jpg')
+      path: require('../../assets/img/index/system1.jpg')
     },
     {
       desc: '私家智能定制APP',
-      path: require('../assets/img/index/app1.jpg')
+      path: require('../../assets/img/index/app1.jpg')
     },
     {
       desc: '公司业绩统计管理系统',
-      path: require('../assets/img/index/system2.jpg')
+      path: require('../../assets/img/index/system2.jpg')
     }
   ]
 })

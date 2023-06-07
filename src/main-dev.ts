@@ -14,6 +14,7 @@ import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 import '@/assets/style/common.css'
 import '@/assets/font/iconfont'
+import dataV from '@jiaminghi/data-view'
 // import '../src/assets/css/bootstrap.min.css'
 // import '@/assets/fonts/font-awesome/css/font-awesome.min.css'
 // import '@/assets/css/style.css'
@@ -35,4 +36,4 @@ app.directive('scroll-to', VueScrollTo)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
-app.use(ElementPlus).use(mavonEditor).use(store).use(router).mount('#app')
+app.use(ElementPlus).use(mavonEditor).use(dataV).use(store).use(router).mount('#app')

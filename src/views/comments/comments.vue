@@ -4,7 +4,7 @@
 <h2 class="title-2 text-center"> 3 Comments</h2>
 
 <div class="comments-single">
-    <img src="../assets/images/comenter-1.jpg" alt="comment image" />
+    <img src="../../assets/images/comenter-1.jpg" alt="comment image" />
     <h3>Jeff Fashkin <span>3 days ago</span> </h3>
     <p>Proactively underwhelm performance based products before functional expertise.
         Intrinsicly scale distinctive web services without client-centered benefits. Rapidiously
@@ -15,7 +15,7 @@
 
 </div>
 <div class="comments-single reply">
-    <img src="../assets/images/comenter-2.jpg" alt="comment image" />
+    <img src="../../assets/images/comenter-2.jpg" alt="comment image" />
     <h3>Daniel Wood <span>3 days ago</span> </h3>
     <p>Professionally communicate enabled e-business with cooperative results. Seamlessly seize
         maintainable leadership after.</p>
@@ -23,7 +23,7 @@
 </div>
 
 <div class="comments-single">
-    <img src="../assets/images/comenter-3.jpg" alt="comment image" />
+    <img src="../../assets/images/comenter-3.jpg" alt="comment image" />
     <h3>Brandon Cole <span>3 days ago</span> </h3>
     <p>Rapidiously mesh open-source customer service whereas process-centric opportunities.
         Professionally communicate enabled e-business with cooperative results. Seamlessly seize
@@ -34,7 +34,7 @@
 </div>
 <div v-for="item in list" class="comments">
 <div class="comments-single">
-    <img src="../assets/images/comenter-1.jpg" alt="comment image" />
+    <img src="../../assets/images/comenter-1.jpg" alt="comment image" />
     <h3>{{item.name}} <span>3 days ago</span> </h3>
     <p>{{item.desc}}</p>
     <a class="reply-link"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a>
@@ -83,9 +83,9 @@ const onSubmit= ()=>{
 }
 </script>
 <style>
-@import url(../assets/css/bootstrap.min.css);
-@import url(../assets/fonts/font-awesome/css/font-awesome.min.css);
-@import url(../assets/css/style.css);
+@import url(../../assets/css/bootstrap.min.css);
+@import url(../../assets/fonts/font-awesome/css/font-awesome.min.css);
+@import url(../../assets/css/style.css);
 .comform{
     display: flex;
     align-items: center;

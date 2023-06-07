@@ -24,13 +24,13 @@
                         <div class="blog-slide">
                             <ul class="slides">
                                 <li>
-                                    <img src="../assets/images/blog-single-1.jpg" alt="blog-image 1" />
+                                    <img src="../../assets/images/blog-single-1.jpg" alt="blog-image 1" />
                                 </li>
                                 <li>
-                                    <img src="../assets/images/blog-single-2.jpg" alt="blog-image 2" />
+                                    <img src="../../assets/images/blog-single-2.jpg" alt="blog-image 2" />
                                 </li>
                                 <li>
-                                    <img src="../assets/images/blog-single-3.jpg" alt="blog-image 3" />
+                                    <img src="../../assets/images/blog-single-3.jpg" alt="blog-image 3" />
                                 </li>
                             </ul>
                         </div>
@@ -75,7 +75,7 @@
                         </div>
 
                         <div class="author-box">
-                            <img src="../assets/images/post-author.png" alt="Taylor">
+                            <img src="../../assets/images/post-author.png" alt="Taylor">
                             <div class="author-details">
                                 <h4 class="subtitle">Taylor White</h4>
                                 <p>Continually myocardinate reliable channels with distributed networks. Monotonectally
@@ -156,9 +156,9 @@
 </template>
 
 <style>
-@import url(../assets/css/bootstrap.min.css);
-@import url(../assets/fonts/font-awesome/css/font-awesome.min.css);
-@import url(../assets/css/style.css);
+@import url(../../assets/css/bootstrap.min.css);
+@import url(../../assets/fonts/font-awesome/css/font-awesome.min.css);
+@import url(../../assets/css/style.css);
 .comform{
     display: flex;
     align-items: center;

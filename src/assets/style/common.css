@@ -1,6 +1,7 @@
-:root{
+:root {
     --hover_color: #3370ff;
 }
+
 /*!*html,*!*/
 /*!*body,*!*/
 /*!*div,*!*/
@@ -67,10 +68,11 @@
 body,
 ul,
 li,
-img{
+img {
     margin: 0;
     padding: 0;
 }
+
 button,
 input,
 optgroup,
@@ -108,7 +110,12 @@ a {
     outline: none;
 }
 
-a, a:hover, a:active, a:visited, a:link, a:focus {
+a,
+a:hover,
+a:active,
+a:visited,
+a:link,
+a:focus {
     outline: none;
     background: none;
     text-decoration: none;
@@ -117,6 +124,21 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 ul,
 li {
     list-style: none;
+}
+
+.colorGrass {
+    color: #33cea0;
+
+
+}
+.colorblack{
+    color: black;
+}
+.colorblue{
+    color:#28f;
+}
+.colorRed {
+    color: #ff5722;
 }
 
 /*h1,*/
@@ -129,7 +151,7 @@ li {
 /*    font-weight: 400;*/
 /*    font-variant: normal;*/
 /*}*/
-.el-container *{
+.el-container * {
     box-sizing: border-box;
 }
 
@@ -156,7 +178,9 @@ li {
     margin-bottom: 0 !important;
 }
 
-.el-header, .el-main, .el-footer {
+.el-header,
+.el-main,
+.el-footer {
     padding: 0;
 }
 
@@ -191,4 +215,3 @@ li {
 }
 
 /* 修复交汇时出现的白块 */
-

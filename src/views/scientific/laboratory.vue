@@ -1,5 +1,5 @@
 <template>
     <div>
-        个人中心页面
+        实验室
     </div>
 </template>

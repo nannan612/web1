@@ -12,7 +12,7 @@
                             <div class="single-crouse">
 
                                 <a class="hover-effect">
-                                    <img src="../assets/img/news1.jpg" />
+                                    <img src="../../assets/img/news1.jpg" />
                                 </a>
                                 <el-link>
                                     第一行....<br>
@@ -23,7 +23,7 @@
                             </div>
                             <div class="single-crouse">
                                 <a class="hover-effect">
-                                    <img src="../assets/images/news3.jpg" alt="">
+                                    <img src="../../assets/images/news3.jpg" alt="">
                                 </a>
 
                                 <el-link>
@@ -34,7 +34,7 @@
                             </div>
                             <div class="single-crouse">
                                 <a class="hover-effect">
-                                    <img src="../assets/images/news3.jpg" alt="">
+                                    <img src="../../assets/images/news3.jpg" alt="">
                                 </a>
                                 <el-link>
                                     第一行..........<br>
@@ -145,13 +145,14 @@
 
                         <div class="gupiao">
                             热门股票
-                            <el-table :data="tableData" stripe style="width: 40%">
-                                <el-table-column prop="代码" label="代码" width="100" />
-                                <el-table-column prop="名称" label="名称" width="100" />
-                                <el-table-column prop="最新价" label="最新价" width="100" style="color: red" />
-                                <el-table-column prop="涨跌幅" label="涨跌幅" style="color: red" />
-
-                            </el-table>
+                        
+                            <div class="centerRight2">
+                                <div class="bg-color-black">
+                                    <div class="d-flex mt-1 jc-center body-box">
+                                        <dv-scroll-board class="dv-scr-board" :config="config" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="content">
                             <div class="avatar">
@@ -179,7 +180,7 @@
                         <div class="block-line"></div>
                         <div class="title">真实回测</div>
                         <div class="block">
-                            <img src="../assets/images/news2.jpg" alt="">
+                            <img src="../../assets/images/news2.jpg" alt="">
                             <div class="jishaotext">介绍：xxxxxxxxxxxxxxxxxxx</div>
                         </div>
                         <div class="rukou">
@@ -274,15 +275,15 @@
                         </div>
                     </div>
                     <div>
-                         <div class="rank-title">上新数据</div>
-                         <div class="rank-title"><a href="#">数据1</a></div>
-                         <div class="rank-title"><a href="#">数据2</a></div>
-                         <div class="rank-title"><a href="#">数据3</a></div>
-                         <div class="rank-title"><a href="#">数据4</a></div>
+                        <div class="rank-title">上新数据</div>
+                        <div class="rank-title"><a href="#">数据1</a></div>
+                        <div class="rank-title"><a href="#">数据2</a></div>
+                        <div class="rank-title"><a href="#">数据3</a></div>
+                        <div class="rank-title"><a href="#">数据4</a></div>
 
 
                     </div>
-                   
+
 
                 </div>
             </el-col>
@@ -309,20 +310,6 @@ let redu_Rank = reactive([
     { name: '论文4', value: 462, percent: 70 },
 ]
 )
-const tableData = [
-    {
-        代码: 'BK0475',
-        名称: '银行',
-        最新价: '2848.89',
-        涨跌幅: '0.93%'
-    },
-    {
-        代码: '603757',
-        名称: '大元泵业',
-        最新价: '28.30',
-        涨跌幅: '1.62%'
-    },
-]
 let textArr = [
     { tag: '时事新闻', title: ' 第一条新闻111111111111111' },
     { tag: '时事新闻', title: '第23条新闻嘎嘎嘎嘎嘎嘎灌灌灌灌灌' },
@@ -337,6 +324,29 @@ const text = computed(() => {
         val: textArr[number.value]
     }
 })
+
+const config = reactive({
+      header: ["<span  class='colorblack'>代码</span>", "<span  class='colorblack'>名称</span>", "<span  class='colorblack'>涨跌幅</span>"],
+      data: [
+        ["<span  class='colorblack'>代码1</span>", "<span  class='colorblue'>银行1</span>", "<span  class='colorGrass'>↑75%</span>"],
+        ["<span  class='colorblack'>代码2</span>", "<span  class='colorblue'>银行2</span>", "<span  class='colorRed'>↓33%</span>"],
+        ["<span  class='colorblack'>代码3</span>", "<span  class='colorblue'>银行3</span>", "<span  class='colorGrass'>↑100%</span>"],
+        ["<span  class='colorblack'>代码4</span>", "<span  class='colorblue'>银行4</span>", "<span  class='colorGrass'>↑94%</span>"],
+        ["<span  class='colorblack'>代码5</span>", "<span  class='colorblue'>银行5</span>", "<span  class='colorGrass'>↑95%</span>"],
+        ["<span  class='colorblack'>代吗5</span>", "<span  class='colorblue'>银行6</span>", "<span  class='colorGrass'>↑63%</span>"],
+        ["<span  class='colorblack'>代码6</span>", "<span  class='colorblue'>银行7</span>", "<span  class='colorGrass'>↑84%</span>"],
+        ["<span  class='colorblack'>代码7</span>", "<span  class='colorblue'>银行8</span>", "<span  class='colorRed'>↓46%</span>"],
+        ["<span  class='colorblack'>代码8</span>", "<span  class='colorblue'>银行9</span>", "<span  class='colorRed'>↓13%</span>"],
+        ["<span  class='colorblack'>代码9</span>", "<span  class='colorblue'>银行1</span>", "<span  class='colorGrass'>↑76%</span>"]
+      ],      rowNum: 7, //表
+      headerHeight: 35,
+      headerBGC: '#F5F5F5', //表头
+      oddRowBGC: '#F5F5F5', //奇数行
+      evenRowBGC: '#fff', //偶数行
+      index: true,
+      columnWidth: [50],
+      align: ['center']
+    })
 onMounted(() => {
     startMove()
 })
@@ -376,7 +386,12 @@ p {
     min-height: 36px;
     // height: 814px;
 }
-
+.colorRed {
+  color: #ff5722 !important;
+}
+.colorGrass {
+  color: #33cea0 !important;
+}
 .left {
     display: flex;
     flex-direction: column;
@@ -470,7 +485,7 @@ p {
 }
 
 
-@import url(../assets/css/style.css);
+@import url(../../assets/css/style.css);
 
 .textBox {
     width: 80%;
@@ -541,7 +556,7 @@ p {
     }
 
     .gupiao {
-        margin-top: 40px;
+        margin-top: 10px;
         margin-left: 80px;
         font-size: larger;
         color: blue;
@@ -553,7 +568,7 @@ p {
 
     .content {
         width: 100%;
-        height: 350px;
+        height: 250px;
     }
 
     .avatar {
@@ -564,7 +579,7 @@ p {
         border: 2px solid #f0f0f0;
         float: left;
         shape-outside: circle();
-        top: 107px;
+        top: -91px;
         left: 412px;
         position: relative;
     }
@@ -618,65 +633,91 @@ p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .hot-posts {
-  margin: 20px;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 
 .hot-posts__title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 1.5;
-  font-weight: bold;
-  text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
 }
 
 .hot-posts__list {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .hot-post__item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .hot-post__rank {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: #666;
-  margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    margin-right: 10px;
 }
 
 .hot-post__info {
-  flex: 1;
+    flex: 1;
 }
 
 .hot-post__title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .hot-post__views {
-  font-size: 16px;
-  color: #666;
+    font-size: 16px;
+    color: #666;
+}
+
+
+.centerRight2 {
+  padding: 16px;
+  padding-top: 20px;
+  height: 310px;
+  width: 300px;
+  border-radius: 5px;
+  .bg-color-black {
+    height: 280px;
+    border-radius: 10px;
+  }
+  .text {
+    color: #c3cbde;
+  }
+  .body-box {
+    border-radius: 10px;
+    overflow: hidden;
+    .dv-scr-board {
+      width: 270px;
+      height: 240px;
+    }
+  }
 }
 
 </style>
+
 
